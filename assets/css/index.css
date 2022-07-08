@@ -1,0 +1,21 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  text-align:center;
+  background-image: url('../manga/GoS/bg.gif');
+  background-attachment: fixed;
+  background-size: 140% 160%;
+  background-repeat: no-repeat;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: #C70039;
+  color: white;
+  text-align: center;
+}
