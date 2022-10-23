@@ -20,21 +20,59 @@
     <div id="hero-top"></div>
     <div id="hero-bottom"></div>
   </section>
+  	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	  <div class="container-fluid">
+	     <ul class="navbar-nav">
+		<li class="nav-item">
+			<h3 class="text-success"> الأجزاء :</h3>
+		</li>
+		 <li class="nav-item">
+			<a class="nav-link" href="#p1">الاول</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#p2">الثاني</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#p3">الثالث</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#p4">الرابع</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link disabled" href="#p5">الخامس والأخير</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	<hr>
+	
+	
   <div class="d-flex h-100 align-items-center">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="jumbotron flex-grow-0 flex-shrink-1" id="imgContainer">
+		  <div id="p1">
 			<script>
 				let img = "";
 				for (let i = 1; i <= 34; i++) {
-				  img += "<img src='assets/manga/GoS/img/"+ i +".jpg'  class='center' />";
+				  img += "<img src='assets/manga/GoS/img/p1/"+ i +".jpg'  class='center' />";
 				}
 				document.getElementById("imgContainer").innerHTML = img;
 			</script>
+		  </div>
+		  <div id="p2">
+			<script>
+				let img = "";
+				for (let i = 1; i <= 26; i++) {
+				  img += "<img src='assets/manga/GoS/img/p2/"+ i +".jpg'  class='center' />";
+				}
+				document.getElementById("imgContainer").innerHTML = img;
+			</script>
+		  </div>
 			
 			<hr>
-			<p> قريبا : يتبع في الجزء 2 </p>
+			<p> قريبا : يتبع في الجزء 3 </p>
           </div>
         </div>
       </div>
