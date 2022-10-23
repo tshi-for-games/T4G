@@ -54,7 +54,7 @@
           <div class="jumbotron flex-grow-0 flex-shrink-1" id="imgContainer">
 		  <div id="p1">
 			<script>
-				var img = "";
+				let img = "";
 				for (let i = 1; i <= 34; i++) {
 				  img += "<img src='assets/manga/GoS/img/p1/"+ i +".jpg'  class='center' />";
 				}
@@ -63,13 +63,14 @@
 		  </div>
 		  <div id="p2">
 			<script>
-				var img = "";
 				for (let i = 1; i <= 26; i++) {
 				  img += "<img src='assets/manga/GoS/img/p2/"+ i +".jpg'  class='center' />";
 				}
-				document.getElementById("imgContainer").innerHTML = img;
 			</script>
 		  </div>
+		  <script>
+				document.getElementById("imgContainer").innerHTML = img;
+		  </script>
 			
 			<hr>
 			<p> قريبا : يتبع في الجزء 3 </p>
