@@ -36,6 +36,7 @@
 				img += '<div class="space"></div>';
 				
 				document.getElementById("imgContainer").innerHTML = img;
+				topFunction();
 			}
 			
 			function p2(){
@@ -49,6 +50,12 @@
 				img += "<p> قريبا : يتبع في الجزء 3 </p>";
 					
 				document.getElementById("imgContainer").innerHTML = img;
+				topFunction();
+			}
+			
+			function topFunction() {
+			  document.body.scrollTop = 0; // For Safari
+			  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 			}
 		</script>
 </head>
