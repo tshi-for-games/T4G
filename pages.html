@@ -46,8 +46,25 @@
 				for (let i = 1; i <= 26; i++) {
 					img += "<img src='assets/manga/GoS/img/p2/"+ i +".jpg'  class='center border border-dark' />";
 				}
+				
+				
+				img += '<div class="space"></div>';
+				img += '<button type="button" class="btn-light" onclick="p3()">التالي</button>';
+				img += '<div class="space"></div>';
+					
+				document.getElementById("imgContainer").innerHTML = img;
+				topFunction();
+			}
+			
+			function p3(){
+				var img = "";
+				
+				img += "<img src='assets/manga/GoS/img/p3/"+ 0 +".jpg'  class='center border border-dark img-fluid' />";
+				for (let i = 1; i <= 19; i++) {
+					img += "<img src='assets/manga/GoS/img/p2/"+ i +".jpg'  class='center border border-dark' />";
+				}
 				img += "<hr>";
-				img += "<p> قريبا : يتبع في الجزء 3 </p>";
+				img += "<p> قريبا : يتبع في الجزء 4 </p>";
 					
 				document.getElementById("imgContainer").innerHTML = img;
 				topFunction();
