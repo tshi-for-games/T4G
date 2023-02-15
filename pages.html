@@ -63,8 +63,25 @@
 				for (let i = 1; i <= 19; i++) {
 					img += "<img src='assets/manga/GoS/img/p3/"+ i +".jpg'  class='center border border-dark' />";
 				}
+				
+				
+				img += '<div class="space"></div>';
+				img += '<button type="button" class="btn-light" onclick="p2()">التالي</button>';
+				img += '<div class="space"></div>';
+					
+				document.getElementById("imgContainer").innerHTML = img;
+				topFunction();
+			}
+			
+			function p4(){
+				var img = "";
+				
+				img += "<img src='assets/manga/GoS/img/p4/"+ 0 +".jpg'  class='center border border-dark img-fluid' />";
+				for (let i = 1; i <= 34; i++) {
+					img += "<img src='assets/manga/GoS/img/p4/"+ i +".jpg'  class='center border border-dark' />";
+				}
 				img += "<hr>";
-				img += "<p> قريبا : يتبع في الجزء 4 </p>";
+				img += "<p> قريبا : يتبع في الجزء 5 </p>";
 					
 				document.getElementById("imgContainer").innerHTML = img;
 				topFunction();
@@ -97,7 +114,7 @@
 				<a class="nav-link" href="javascript:p3()">الثالث</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link disabled" href="#p4">الرابع</a>
+				<a class="nav-link" href="javascript:p4()">الرابع</a>
 			  </li>
 			  <li class="nav-item">
 				<a class="nav-link disabled" href="#p5">الأخير</a>
