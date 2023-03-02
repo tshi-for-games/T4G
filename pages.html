@@ -80,8 +80,23 @@
 				for (let i = 1; i <= 34; i++) {
 					img += "<img src='assets/manga/GoS/img/p4/"+ i +".jpg'  class='center border border-dark' />";
 				}
+				
+				img += '<div class="space"></div>';
+				img += '<button type="button" class="btn-light" onclick="p5()">التالي</button>';
+				img += '<div class="space"></div>';
+					
+				document.getElementById("imgContainer").innerHTML = img;
+				topFunction();
+			}
+			
+			function p5(){
+				var img = "";
+				
+				for (let i = 0; i <= 47; i++) {
+					img += "<img src='assets/manga/GoS/img/p5/"+ i +".PNG'  class='center border border-dark' />";
+				}
 				img += "<hr>";
-				img += "<p> قريبا : يتبع في الجزء 5 </p>";
+				img += "<p> النهاية </p>";
 					
 				document.getElementById("imgContainer").innerHTML = img;
 				topFunction();
@@ -117,7 +132,7 @@
 				<a class="nav-link" href="javascript:p4()">الرابع</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link disabled" href="#p5">الأخير</a>
+				<a class="nav-link" href="javascript:p5()">الأخير</a>
 			  </li>
 		</ul>
 		<a class="nav-link text-light" href="https://tshi-for-games.github.io/T4G/">الرئيسية</a>
